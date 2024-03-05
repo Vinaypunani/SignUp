@@ -1,0 +1,163 @@
+:root{
+    --main-color:#fff;
+    --second-color:#169483;
+    --hover-color:#168173;
+    --text-color:#444;
+    --light-text-color:#666;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #e0e2e6;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    width: 950px;
+    height: 650px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    box-shadow: 3px 4px 7px #29262618;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.data-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 450px;
+}
+
+.img-section{
+    width: 400px;
+    height: 590px;
+    background: url(signup.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.prof-section{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile i{
+    font-size: 40px;
+    margin-right: 10px;
+    /* border-radius: 50%; */
+    /* border: 1px solid black; */
+}
+
+.signup{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.signup-info{
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--light-text-color);
+}
+
+.input-section{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 50px;
+}
+
+.input-section label{
+    font-size: 17px;
+    color: var(--light-text-color);
+}
+
+.input-section input{
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    outline: none;height: 45px;
+    background-color: #cccccc69;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.input-section input:hover{
+    outline: 2px solid var(--second-color);
+}
+
+.btn-section{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-section span{
+    margin-top: 15px;
+    font-size: 16px;
+    color: var(--text-color);   
+}
+
+.sign,.google-log{
+    width: 100%;
+    border-radius: 50px;
+    height: 50px;    
+    background-color: var(--second-color);
+    color: var(--main-color);
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.sign:hover{
+    background-color: var(--hover-color);
+}
+
+.google-log{
+    margin-top: 20px;
+    background-color: transparent;
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    font-size: 15px;
+
+}
+
+.google-log:hover{
+    background-color: var(--hover-color);
+    color: var(--main-color);
+}
+
+.btn-section a{
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 15px;
+
+}
